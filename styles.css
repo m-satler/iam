@@ -1,0 +1,109 @@
+
+/*fonts: Literata, Quicksand. styles available: normal, bold*/
+
+
+@font-face {
+  font-family: 'Literata';
+  src: url('fonts/Literata-VariableFont.ttf');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/Quicksand-VariableFont.ttf');
+
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+@font-face {
+  font-family: 'Literata';
+  src: url('fonts/static/literata/Literata-Bold.ttf');
+  
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/static/quicksand/Quicksand-Bold.ttf');
+  
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*there are like 10 more font-faces that are avaible. delete any that are not used before adding to the bucket.*/
+
+body {
+  color: #191751;
+  background: #fbe8cc;
+  font-family: 'Quicksand';
+}
+
+.about-card {
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  background-color: #ffd9a1;
+  border-radius: 2em;
+  box-shadow: 0em .5em .5em .2em #1e1e1e30;
+  padding: 4em;
+  margin: 5% 12.5%;
+}
+
+.about-card__image {
+  float: left;
+  margin-right: 5%;
+  max-width: 45%;
+  border: .6em solid #794e0d;
+  border-radius: 2em 8em;
+  /*i don't know about this border radius. might delete.*/
+}
+
+.about-card__text {
+  float: right;
+}
+
+.about-card__blurb {
+  text-align: center;
+  font-size: larger;
+  margin: 2em;
+}
+
+.heading {
+  font-family: 'Literata', serif; /*fonts are still a work in progress*/
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6em;
+  line-height: 1em;
+  margin: 0em;
+  padding: 0em;
+  padding-left: 0em;
+
+  color: #191751;
+}
+
+.subheading {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1em;
+  margin: .8em 0em;
+  padding: 0em;
+
+  color: #89899f;
+}
+
+
+/*
+@media screen and (max-width:480px){
+    
+  }
+  
+  @media screen and (max-width:320px){
+   
+  }
+*/
