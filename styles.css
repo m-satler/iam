@@ -40,40 +40,11 @@ body {
   color: #191751;
   background: #fbe8cc;
   font-family: 'Quicksand';
+  font-size: large;
 }
 
-.about-card {
-  display: flex;
-  flex: wrap;
-  justify-content: center;
-  background-color: #ffd9a1;
-  border-radius: 2em;
-  box-shadow: 0em .5em .5em .2em #1e1e1e30;
-  padding: 4em;
-  margin: 5% 12.5%;
-}
-
-.about-card__image {
-  float: left;
-  margin-right: 5%;
-  max-width: 45%;
-  border: .6em solid #794e0d;
-  border-radius: 2em 8em;
-  /*i don't know about this border radius. might delete.*/
-}
-
-.about-card__text {
-  float: right;
-}
-
-.about-card__blurb {
-  text-align: center;
-  font-size: larger;
-  margin: 2em;
-}
-
-.heading {
-  font-family: 'Literata', serif; /*fonts are still a work in progress*/
+h1 { /*can be replaced by a heading class. ask for best practices before pushing*/
+  font-family: 'Literata', serif; /*heading font is still a work in progress*/
   font-style: normal;
   font-weight: 400;
   font-size: 6em;
@@ -85,7 +56,12 @@ body {
   color: #191751;
 }
 
-.subheading {
+h2 {
+  font-size: 3em;
+  font-weight: 400;
+}
+
+h4 { /*can be replaced by a subheading class. ask for best practices before pushing*/
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -97,13 +73,119 @@ body {
   color: #89899f;
 }
 
+.about-card {
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  background-color: #ffd9a1;
+  border-radius: 2em;
+  box-shadow: 0em .5em .5em .2em #1e1e1e30;
+  padding: 4em;
+  margin: 2.5% 12.5%;
+}
 
-/*
-@media screen and (max-width:480px){
-    
-  }
+.about-card__image div {
+  float: left;
+  margin-right: 5%;
+  min-width: 20%;
+  max-width: 45%;
+}
+
+.about-card__image img {
+  object-fit: contain;
+  max-width: 100%;
+  border: .6em solid #794e0d;
+  border-radius: 2em 8em;
+  /*i don't know about this border radius. might delete.*/
+}
+
+.about-card__intro {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin-left: 5%;
+}
+
+.about-card__blurb {
+  text-align: center;
+  font-size: larger;
+  margin: 2em;
+}
+
+.projects__header {
+  margin: 6em 1em 2em;
+  text-align: center;
+}
+
+.projects__cards {
+  background-color: #EEB359; 
+  text-align: center;
+  margin: 2em 7em;
+  padding: 14em 2em;
+
+  color: #E1E1E6;
+  border-radius: .8em;
+}
+
+.projects__construction {
+  display: inline;
+  background-color: #DC9934;
   
-  @media screen and (max-width:320px){
-   
+}
+
+.contact__wrapper {
+  overflow: hidden;
+  position: fixed;
+  z-index: 10;
+  bottom: -13em;
+  left: 50%;
+  border-radius: 50%;
+  margin-left: -13em;
+  transform: scale(1);
+  transition: all .3s ease;
+}
+
+.contact__overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+@media screen and (max-width:960px){ /*adjusted from 480 for testing. might wanna make a new mode for 360*/
+  .about-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    background-color: #ffd9a1;
+    border-radius: 2em;
+    box-shadow: 0em .5em .5em .2em #1e1e1e30;
+    padding: 2em;
+    margin: 22% 7% 5%;
   }
-*/
+
+  .about-card__intro {
+    order:0;
+  }
+
+  .about-card__image {
+    order:1;
+    margin-bottom: 5%;
+    max-width: 16em;
+    max-height: 16em;
+    border-radius: 2em 2em;
+  }
+
+  .about-card__blurb {
+    order: 2;
+
+    margin: 5% 2.5%;
+  }
+  }

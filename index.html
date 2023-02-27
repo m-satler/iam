@@ -11,19 +11,33 @@
 <body>
   <section id="about">
     <div class="about-card">
-      <img class="about-card__image" alt="Profile Picture" src="catt.png"></img>
-      <div class="about-card__text">
-        <h4 class="heading">Hi</h4>
-        <h6 class="subheading">I'm Mei, a teen developer.</h6>
+      <div class="about-card__image">
+        <img class="about-card__image" alt="Profile Picture" src="catt.png"></img>
+      </div>
+      <div class="about-card__intro">
+        <h1>Hi</h1>
+        <h4>I'm Mei, a teen developer.</h4>
         <p class="about-card__blurb">lorem ipsum blah blah here i talk about myself and my interests i guess. i’d put work experience/software experience here but i don’t know anything or do anything so i can’t; it’d just be empty</p>
       </div>
     </div>
   </section>
   <section id="projects">
-    <p class="subheading">This section is under construction-- check back later!</p>
+    <h2 class="projects__header">Projects</h2>
+    <div class="projects__cards">
+      <p class="projects__construction">This section is under construction -- check back later!</p>
+    </div> 
   </section>
   <section id="contact">
-    <!--possibly add this as a footer instead-->
+    <!--https://tympanus.net/codrops/2013/08/09/building-a-circular-navigation-with-css-transforms/-->
+    <div class="contact__button">+</div>
+    <div class="contact__wrapper">
+      <ul>
+        <li><a href="www.github.com"><span class="contact__wrapper--github">test</span></a></li>
+        <li><a href="www.linkedin.com"><span class="contact__wrapper--linkedin">ing</span></a></li>
+        <li><a href="meisatler@gmail.com"><span class="contact__wrapper--email">this</span></a></li>
+      </ul>
+    </div>
+    <div class="contact__overlay"></div>
   </section>
 </body>
 
