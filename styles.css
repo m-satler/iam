@@ -130,18 +130,21 @@ h4 { /*can be replaced by a subheading class. ask for best practices before push
 
   color: #E1E1E6;
   border-radius: .8em;
+
+  /*https://designkojo.com/how-do-i-make-element-stretch-100-width-screen-predefined-theme
+  clever, but doesn't hold up on smaller screens. same with position absolute trick. need to research alternatives/workarounds*/
 }
 
 .projects__construction {
   display: inline;
   background-color: #DC9934;
-  
+  font-size: x-large;
+  border-radius: 4px;
 }
 
-.contact__wrapper {
-  overflow: hidden;
-  z-index: 10;
-  border-radius: 50%;
+.contact__header {
+  margin: 4em 1em 10em;
+  text-align: center;
 }
 
 .contact__wrapper li {
@@ -149,17 +152,23 @@ h4 { /*can be replaced by a subheading class. ask for best practices before push
   transform-origin: 100% 100%;
   left: 50%;
   right:50%;
+  list-style: none;
 }
 
 .contact__wrapper li a {
-  display: block;
-  height: 14.5em;
-  width: 14.5em;
-  border-radius: 50%;
-  color: #ffffff;
-  padding-top: 1.8em;
+  position: absolute;
   text-align: center;
-  transform: skew(-50deg) rotate(-40deg) scale(1);
+  width: 4em;
+  height: 4em;
+  left: 55%;
+  top: 50%;
+  margin: -11em 0 0 -11em;
+  border-radius: 50%;
+  transform-origin: 100% 100%;
+  transform: skew(-60deg) rotate(-75deg);
+  transition: transform 500ms;
+  transition: .5s;
+  text-decoration: none;
 }
 
 .contact__wrapper li a span {
@@ -168,78 +177,86 @@ h4 { /*can be replaced by a subheading class. ask for best practices before push
 }
 
 .contact__wrapper li:first-child {
-  transform: rotate(-10deg) skew(50deg);
+  transform: rotate(15deg) skew(60deg);
 }
 
 .contact__wrapper li:nth-child(2) {
-  transform: rotate(30deg) skew(50deg);
+  transform: rotate(75deg) skew(60deg);
 }
 
 .contact__wrapper li:nth-child(3) {
-  transform: rotate(70deg) skew(50deg);
+  transform: rotate(135deg) skew(60deg);
 }
 
-.contact__wrapper li:nth-child(even) {
-  background-color: #a61414;
+.contact__wrapper li:nth-child(even) a {
+  background-color: #AD7218;
+  border: .3em solid #DC9934;
 }
 
-.contact__wrapper li:nth-child(odd) {
-  background-color: #765050;
+.contact__wrapper li:nth-child(odd) a {
+  background-color: #DC9934;
+  border: .3em solid #EEB359;
 }
 
 /*a:focus could make for some cool visual effects*/
 
 .contact__wrapper li:not(.active) a:hover, .contact__wrapper li:not(.active) a:active {
- background-color: hsla(0, 88%, 70%, 1);
+  color: #191751;
+  border-color: #ffffff00;
+  background-color: #FFD9A1;
 }
 
-/*.contact__overlay {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
-  pointer-events: auto;
-}*/
+@media screen and (max-width:960px){ /*adjusted from the standard 480. might wanna make a new mode for 360*/
+    body {
+      translate: 2% 0%;;
+      font-size: x-large;
+    }
+    .about-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ffd9a1;
+      border-radius: 2em;
+      box-shadow: 0em .5em .5em .2em #1e1e1e30;
+      padding: 2em;
+      margin: 12% 7% 5%;
+    }
 
-@media screen and (max-width:960px){ /*adjusted from 480 for testing. might wanna make a new mode for 360*/
+    .about-card__intro {
+      order:0;
+    }
 
-  .about-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .about-card__image {
+      order:1;
+      margin-top: 0%!important; 
+      margin-bottom: 5%;
+      max-width: 16em;
+      max-height: 16em;
+      border-radius: 2em 2em;
+    }
 
-    background-color: #ffd9a1;
-    border-radius: 2em;
-    box-shadow: 0em .5em .5em .2em #1e1e1e30;
-    padding: 2em;
-    margin: 22% 7% 5%;
-  }
+    .about-card__blurb {
+      order: 2;
+      margin: 5% 2.5%;
+    }
 
-  .about-card__intro {
-    order:0;
-  }
+    .projects__cards {
+      margin-left: 2.5em;
+      margin-right: 2em;
+    }
 
-  .about-card__image {
-    order:1;
-    margin-top: 0%!important; 
-    margin-bottom: 5%;
-    max-width: 16em;
-    max-height: 16em;
-    border-radius: 2em 2em;
-  }
+    .contact__wrapper li {
+      margin: 30% 30%;
+    }
 
-  .about-card__blurb {
-    order: 2;
-
-    margin: 5% 2.5%;
-  }
+    .contact__wrapper li, a {
+      position: relative;
+      transform: none!important;
+    }
   }
 
   @media screen and (max-width:720px){
     body {
-      margin-right: -80%;
+      font-size: large;
     }
-  }
+  }  
