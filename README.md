@@ -6,3 +6,4 @@ a personal portfolio website for mei satler. available at [meisatler.com](meisat
 - [ ] Add javascript elements (finish project section)
 - [ ] Test/add accessibility features
 - [ ] Redesign
+- [ ] Work on lighthouse topics (SEO, Performance)
