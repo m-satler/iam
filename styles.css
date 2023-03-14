@@ -40,11 +40,16 @@
 
 /*there are like 10 more font-faces that are avaible. delete any that are not used before adding to the bucket.*/
 
+html {
+  width: 100%;
+}
+
 body {
   color: #191751;
   background: #fbe8cc;
   font-family: 'Quicksand';
   font-size: large;
+  overflow-x: hidden;
 }
 
 h1 { /*can be replaced by a heading class. ask for best practices before pushing*/
@@ -164,6 +169,7 @@ h4 { /*can be replaced by a subheading class. ask for best practices before push
   top: 50%;
   margin: -11em 0 0 -11em;
   border-radius: 50%;
+  line-height: 3.5em;
   transform-origin: 100% 100%;
   transform: skew(-60deg) rotate(-75deg);
   transition: transform 500ms;
@@ -245,18 +251,30 @@ h4 { /*can be replaced by a subheading class. ask for best practices before push
       margin-right: 2em;
     }
 
-    .contact__wrapper li {
-      margin: 30% 30%;
+    .contact__header {
+      margin-bottom: 8em;
     }
 
-    .contact__wrapper li, a {
-      position: relative;
-      transform: none!important;
+    .contact__wrapper li a {
+      margin: -9em 0 0 -6em;
     }
   }
 
   @media screen and (max-width:720px){
     body {
       font-size: large;
+    }
+
+    .contact__wrapper li {
+      margin: 10% 10%;
+    }
+
+    .contact__wrapper li, a {
+      position: relative;
+      line-height: 14em;
+      transform: none!important;
+      transform: translateX(-42%)!important;
+      width: 14em!important;
+      height: 14em!important;
     }
   }  
