@@ -179,7 +179,19 @@ h4 { /*can be replaced by a subheading class. ask for best practices before push
 
 .contact__wrapper li a span {
   font-size: 1.1em;
-  opacity: 0.7;
+}
+
+.contact__wrapper img {
+  transform: scale(.31);
+  margin: -4.25em 0 0 -4.25em;
+}
+
+.contact__overlay {
+  position:absolute;
+  height:10vh;
+  width:100vw;
+  border: 1em solid #794e0d;
+  border-radius: 50% 50% 0 0;
 }
 
 .contact__wrapper li:first-child {
