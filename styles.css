@@ -4,7 +4,11 @@
 
 @font-face {
   font-family: 'Literata';
+<<<<<<< Updated upstream
   src: url('fonts/Literata-VariableFont.ttf');
+=======
+  src: url('source/fonts/Literata-VariableFont.ttf');
+>>>>>>> Stashed changes
 
   font-weight: normal;
   font-style: normal;
@@ -13,7 +17,11 @@
 
 @font-face {
   font-family: 'Quicksand';
+<<<<<<< Updated upstream
   src: url('fonts/Quicksand-VariableFont.ttf');
+=======
+  src: url('source/fonts/Quicksand-VariableFont.ttf');
+>>>>>>> Stashed changes
 
   font-weight: normal;
   font-style: normal;
@@ -22,7 +30,11 @@
  
 @font-face {
   font-family: 'Literata';
+<<<<<<< Updated upstream
   src: url('fonts/static/literata/Literata-Bold.ttf');
+=======
+  src: url('source/fonts/static/literata/Literata-Bold.ttf');
+>>>>>>> Stashed changes
   
   font-weight: bold;
   font-style: normal;
@@ -31,7 +43,11 @@
 
 @font-face {
   font-family: 'Quicksand';
+<<<<<<< Updated upstream
   src: url('fonts/static/quicksand/Quicksand-Bold.ttf');
+=======
+  src: url('source/fonts/static/quicksand/Quicksand-Bold.ttf');
+>>>>>>> Stashed changes
   
   font-weight: bold;
   font-style: normal;
@@ -186,14 +202,79 @@ h4 { /*can be replaced by a subheading class. ask for best practices before push
   margin: -4.25em 0 0 -4.25em;
 }
 
+<<<<<<< Updated upstream
+=======
+.contact__overlay div:first-child{
+  position:absolute;
+  height:35vw;
+  width:75vw;
+  border: .8em solid #794e0d;
+  border-radius: 40rem 40rem 0 0;
+  background-color: #AD7218;
+  left: 10.5%;
+  transform: translateY(-40vw);
+  z-index: -100;
+}
+
+.contact__overlay div:nth-child(2){
+  position:absolute;
+  height:30vw;
+  width:65vw;
+  border: .8em solid #AD7218;
+  border-radius: 40rem 40rem 0 0;
+  background-color: #DC9934;
+  left: 15.5%;
+  transform: translateY(-35vw);
+  z-index: -99;
+}
+
+.contact__overlay div:nth-child(3){
+  position:absolute;
+  height:25vw;
+  width:50vw;
+  border: .8em solid #DC9934;
+  border-radius: 40rem 40rem 0 0;
+  background-color: #EEB359;
+  left: 23%;
+  transform: translateY(-30vw);
+  z-index: -98;
+}
+
+/*
+.contact__overlay {
+  background-image: url("source/img/semi.png");
+  transform: scale(1) translate(45%, -120%)!important;
+}
+
+>>>>>>> Stashed changes
 .contact__overlay {
   position:absolute;
   height:10vh;
   width:100vw;
   border: 1em solid #794e0d;
   border-radius: 50% 50% 0 0;
+<<<<<<< Updated upstream
 }
 
+=======
+}	
+
+.contact__overlay {
+  position: abosolute;
+  z-index: -30; 
+  opacity: .4;
+  transform: translateY(-22em) translateX(7.1em);
+}
+
+#contact {
+  background-color: #191751;
+  height: 100%;
+  background-image: linear-gradient(hsl(10,90,66), transparent 70%);
+  background-size: 100% 100%;
+  mix-blend-mode: difference;
+}*/
+
+>>>>>>> Stashed changes
 .contact__wrapper li:first-child {
   transform: rotate(15deg) skew(60deg);
 }
@@ -270,9 +351,43 @@ h4 { /*can be replaced by a subheading class. ask for best practices before push
     .contact__wrapper li a {
       margin: -9em 0 0 -6em;
     }
+<<<<<<< Updated upstream
   }
 
   @media screen and (max-width:720px){
+=======
+
+    .contact__wrapper img {
+      transform: scale(.42);
+      margin: -2.72em 0 0 -2.72em;
+    }
+
+    .contact__overlay div:first-child{
+      position: absolute!important;
+      transform: translateY(-5vw)!important;
+      left: 8%!important;
+    }
+    .contact__overlay div:nth-child(2){
+      position: absolute!important;
+      transform: translateY(-.1vw)!important;
+      left: 13%!important;
+    }
+    .contact__overlay div:nth-child(3){
+      position: absolute!important;
+      transform: translateY(5vw)!important;
+      left: 21%!important;
+    }
+}
+
+/*
+remove semi png
+adjust colors
+add new left measurements for mobile
+check element spacing on mobile
+*/
+
+@media screen and (max-width:720px){
+>>>>>>> Stashed changes
     body {
       font-size: large;
     }
@@ -284,9 +399,31 @@ h4 { /*can be replaced by a subheading class. ask for best practices before push
     .contact__wrapper li, a {
       position: relative;
       line-height: 14em;
+<<<<<<< Updated upstream
       transform: none!important;
+=======
+>>>>>>> Stashed changes
       transform: translateX(-42%)!important;
       width: 14em!important;
       height: 14em!important;
     }
+<<<<<<< Updated upstream
   }  
+=======
+
+    .contact__wrapper li:nth-child(even) a {
+      background-color: #AD7218;
+      border: .6em solid #DC9934;
+    }
+    
+    .contact__wrapper li:nth-child(odd) a {
+      background-color: #DC9934;
+      border: .6em solid #EEB359;
+    }
+
+    .contact__wrapper img {
+      transform: scale(1);
+      margin: .3em 0 0 0;
+    }
+}  
+>>>>>>> Stashed changes
