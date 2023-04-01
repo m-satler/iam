@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('source/fonts/Quicksand-VariableFont.ttf');
+  
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+body {
+    display: flex;
+    color: #191751;
+    background: #fbe8cc;
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    overflow-x: hidden;
+    justify-content: center;
+  }
+
+.subheading {
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1em;
+    padding-top: 25vh;
+    color: #89899f;
+}

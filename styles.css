@@ -1,14 +1,6 @@
-
-/*fonts: Literata, Quicksand. styles available: normal, bold*/
-
-
 @font-face {
   font-family: 'Literata';
-<<<<<<< Updated upstream
-  src: url('fonts/Literata-VariableFont.ttf');
-=======
   src: url('source/fonts/Literata-VariableFont.ttf');
->>>>>>> Stashed changes
 
   font-weight: normal;
   font-style: normal;
@@ -17,11 +9,7 @@
 
 @font-face {
   font-family: 'Quicksand';
-<<<<<<< Updated upstream
-  src: url('fonts/Quicksand-VariableFont.ttf');
-=======
   src: url('source/fonts/Quicksand-VariableFont.ttf');
->>>>>>> Stashed changes
 
   font-weight: normal;
   font-style: normal;
@@ -30,11 +18,7 @@
  
 @font-face {
   font-family: 'Literata';
-<<<<<<< Updated upstream
-  src: url('fonts/static/literata/Literata-Bold.ttf');
-=======
   src: url('source/fonts/static/literata/Literata-Bold.ttf');
->>>>>>> Stashed changes
   
   font-weight: bold;
   font-style: normal;
@@ -43,18 +27,12 @@
 
 @font-face {
   font-family: 'Quicksand';
-<<<<<<< Updated upstream
-  src: url('fonts/static/quicksand/Quicksand-Bold.ttf');
-=======
   src: url('source/fonts/static/quicksand/Quicksand-Bold.ttf');
->>>>>>> Stashed changes
   
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
-
-/*there are like 10 more font-faces that are avaible. delete any that are not used before adding to the bucket.*/
 
 html {
   width: 100%;
@@ -63,12 +41,12 @@ html {
 body {
   color: #191751;
   background: #fbe8cc;
-  font-family: 'Quicksand';
+  font-family: 'Quicksand', sans-serif;
   font-size: large;
   overflow-x: hidden;
 }
 
-h1 { /*can be replaced by a heading class. ask for best practices before pushing*/
+h1 {
   font-family: 'Literata', serif; /*heading font is still a work in progress*/
   font-style: normal;
   font-weight: 400;
@@ -76,7 +54,6 @@ h1 { /*can be replaced by a heading class. ask for best practices before pushing
   line-height: 1em;
   margin: 0em;
   padding: 0em;
-  padding-left: 0em;
 
   color: #191751;
 }
@@ -86,9 +63,7 @@ h2 {
   font-weight: 400;
 }
 
-h4 { /*can be replaced by a subheading class. ask for best practices before pushing*/
-  font-family: 'Quicksand', sans-serif;
-  font-style: normal;
+h4 {
   font-weight: 400;
   font-size: 1.5em;
   line-height: 1em;
@@ -107,13 +82,6 @@ h4 { /*can be replaced by a subheading class. ask for best practices before push
   box-shadow: 0em .5em .5em .2em #1e1e1e30;
   padding: 4em;
   margin: 2.5% 12.5%;
-}
-
-.about-card__image div {
-  float: left;
-  margin-right: 5%;
-  min-width: 20%;
-  max-width: 45%;
 }
 
 .about-card__image img {
@@ -151,9 +119,6 @@ h4 { /*can be replaced by a subheading class. ask for best practices before push
 
   color: #E1E1E6;
   border-radius: .8em;
-
-  /*https://designkojo.com/how-do-i-make-element-stretch-100-width-screen-predefined-theme
-  clever, but doesn't hold up on smaller screens. same with position absolute trick. need to research alternatives/workarounds*/
 }
 
 .projects__construction {
@@ -202,79 +167,6 @@ h4 { /*can be replaced by a subheading class. ask for best practices before push
   margin: -4.25em 0 0 -4.25em;
 }
 
-<<<<<<< Updated upstream
-=======
-.contact__overlay div:first-child{
-  position:absolute;
-  height:35vw;
-  width:75vw;
-  border: .8em solid #794e0d;
-  border-radius: 40rem 40rem 0 0;
-  background-color: #AD7218;
-  left: 10.5%;
-  transform: translateY(-40vw);
-  z-index: -100;
-}
-
-.contact__overlay div:nth-child(2){
-  position:absolute;
-  height:30vw;
-  width:65vw;
-  border: .8em solid #AD7218;
-  border-radius: 40rem 40rem 0 0;
-  background-color: #DC9934;
-  left: 15.5%;
-  transform: translateY(-35vw);
-  z-index: -99;
-}
-
-.contact__overlay div:nth-child(3){
-  position:absolute;
-  height:25vw;
-  width:50vw;
-  border: .8em solid #DC9934;
-  border-radius: 40rem 40rem 0 0;
-  background-color: #EEB359;
-  left: 23%;
-  transform: translateY(-30vw);
-  z-index: -98;
-}
-
-/*
-.contact__overlay {
-  background-image: url("source/img/semi.png");
-  transform: scale(1) translate(45%, -120%)!important;
-}
-
->>>>>>> Stashed changes
-.contact__overlay {
-  position:absolute;
-  height:10vh;
-  width:100vw;
-  border: 1em solid #794e0d;
-  border-radius: 50% 50% 0 0;
-<<<<<<< Updated upstream
-}
-
-=======
-}	
-
-.contact__overlay {
-  position: abosolute;
-  z-index: -30; 
-  opacity: .4;
-  transform: translateY(-22em) translateX(7.1em);
-}
-
-#contact {
-  background-color: #191751;
-  height: 100%;
-  background-image: linear-gradient(hsl(10,90,66), transparent 70%);
-  background-size: 100% 100%;
-  mix-blend-mode: difference;
-}*/
-
->>>>>>> Stashed changes
 .contact__wrapper li:first-child {
   transform: rotate(15deg) skew(60deg);
 }
@@ -297,133 +189,276 @@ h4 { /*can be replaced by a subheading class. ask for best practices before push
   border: .3em solid #EEB359;
 }
 
-/*a:focus could make for some cool visual effects*/
-
 .contact__wrapper li:not(.active) a:hover, .contact__wrapper li:not(.active) a:active {
   color: #191751;
   border-color: #ffffff00;
   background-color: #FFD9A1;
 }
 
-@media screen and (max-width:960px){ /*adjusted from the standard 480. might wanna make a new mode for 360*/
-    body {
-      translate: 2% 0%;;
-      font-size: x-large;
-    }
-    .about-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #ffd9a1;
-      border-radius: 2em;
-      box-shadow: 0em .5em .5em .2em #1e1e1e30;
-      padding: 2em;
-      margin: 12% 7% 5%;
-    }
-
-    .about-card__intro {
-      order:0;
-    }
-
-    .about-card__image {
-      order:1;
-      margin-top: 0%!important; 
-      margin-bottom: 5%;
-      max-width: 16em;
-      max-height: 16em;
-      border-radius: 2em 2em;
-    }
-
-    .about-card__blurb {
-      order: 2;
-      margin: 5% 2.5%;
-    }
-
-    .projects__cards {
-      margin-left: 2.5em;
-      margin-right: 2em;
-    }
-
-    .contact__header {
-      margin-bottom: 8em;
-    }
-
-    .contact__wrapper li a {
-      margin: -9em 0 0 -6em;
-    }
-<<<<<<< Updated upstream
-  }
-
-  @media screen and (max-width:720px){
-=======
-
-    .contact__wrapper img {
-      transform: scale(.42);
-      margin: -2.72em 0 0 -2.72em;
-    }
-
-    .contact__overlay div:first-child{
-      position: absolute!important;
-      transform: translateY(-5vw)!important;
-      left: 8%!important;
-    }
-    .contact__overlay div:nth-child(2){
-      position: absolute!important;
-      transform: translateY(-.1vw)!important;
-      left: 13%!important;
-    }
-    .contact__overlay div:nth-child(3){
-      position: absolute!important;
-      transform: translateY(5vw)!important;
-      left: 21%!important;
-    }
+.contact__rainbow div:first-child{
+  position:absolute;
+  height:35vw;
+  width:75vw;
+  border: .6em solid rgba(121, 78, 13, .5);
+  border-radius: 40rem 40rem 0 0;
+  background-color: #AD7218;
+  left: 10.5%;
+  transform: translateY(-40vw);
+  z-index: -100;
 }
 
-/*
-remove semi png
-adjust colors
-add new left measurements for mobile
-check element spacing on mobile
-*/
+.contact__rainbow div:nth-child(2){
+  position:absolute;
+  height:30vw;
+  width:65vw;
+  border: .6em solid rgba(121, 78, 13, .5);
+  border-radius: 40rem 40rem 0 0;
+  background-color: #DC9934;
+  left: 15.5%;
+  transform: translateY(-35vw);
+  z-index: -99;
+}
+
+.contact__rainbow div:nth-child(3){
+  position:absolute;
+  height:25vw;
+  width:53.5vw;
+  border: .6em solid rgba(121, 78, 13, .5);
+  border-radius: 40rem 40rem 0 0;
+  background-color: #EEB359;
+  left: 21.5%;
+  transform: translateY(-30vw);
+  z-index: -98;
+}
+
+.contact__rainbow div:nth-child(4){
+  position:absolute;
+  height:20vw;
+  width:42vw;
+  border: .6em solid rgba(121, 78, 13, .5);
+  border-radius: 40rem 40rem 0 0;
+  background-color: #FBE8CC;
+  left: 27.5%;
+  transform: translateY(-25vw);
+  z-index: -97;
+}
+
+
+@media screen and (max-width:960px){ 
+  body {
+    translate: 2% 0%;;
+    font-size: x-large;
+  }
+
+  .about-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    margin: 12% 7% 5%;
+  }
+
+  .about-card__intro {
+    order:0;
+  }
+
+  .about-card__image {
+    order:1;
+    margin-top: 0%!important; 
+    margin-bottom: 5%;
+    max-width: 16em;
+    max-height: 16em;
+    border-radius: 2em 2em;
+  }
+
+  .about-card__blurb {
+    order: 2;
+    margin: 5% 2.5%;
+  }
+
+  .projects__cards {
+    margin-left: 2.5em;
+    margin-right: 2em;
+  }
+
+  .contact__header {
+    margin-bottom: 8em;
+  }
+
+  .contact__wrapper li a {
+    margin: -9em 0 0 -6em;
+  }
+
+  .contact__wrapper img {
+    transform: scale(.42);
+    margin: -2.72em 0 0 -2.72em;
+  }
+
+  .contact__rainbow div:first-child{
+    border:.2em solid rgba(121, 78, 13, .5);
+    left: 9%;
+    transform: translateY(-40vw)!important;
+  }
+
+  .contact__rainbow div:nth-child(2){
+    border:.2em solid rgba(121, 78, 13, .5);
+    left: 14.5%;
+    transform: translateY(-35vw)!important;
+  }
+  
+  .contact__rainbow div:nth-child(3){
+    border:.2em solid rgba(121, 78, 13, .5);
+    left: 20.5%;
+    transform: translateY(-30vw)!important;
+  }
+
+  .contact__rainbow div:nth-child(4){
+    border:.2em solid rgba(121, 78, 13, .5);
+    left: 27%;
+    transform: translateY(-25vw)!important;
+  }
+}
 
 @media screen and (max-width:720px){
->>>>>>> Stashed changes
-    body {
-      font-size: large;
-    }
+  body {
+    font-size: large;
+  }
 
-    .contact__wrapper li {
-      margin: 10% 10%;
-    }
+  .contact__wrapper li {
+    margin: 10% 10%;
+  }
 
-    .contact__wrapper li, a {
-      position: relative;
-      line-height: 14em;
-<<<<<<< Updated upstream
-      transform: none!important;
-=======
->>>>>>> Stashed changes
-      transform: translateX(-42%)!important;
-      width: 14em!important;
-      height: 14em!important;
-    }
-<<<<<<< Updated upstream
-  }  
-=======
+  .contact__wrapper li, a {
+    position: relative;
+    line-height: 14em;
+    transform: translateX(-42%)!important;
+    width: 14em!important;
+    height: 14em!important;
+  }
 
-    .contact__wrapper li:nth-child(even) a {
-      background-color: #AD7218;
-      border: .6em solid #DC9934;
-    }
-    
-    .contact__wrapper li:nth-child(odd) a {
-      background-color: #DC9934;
-      border: .6em solid #EEB359;
-    }
+  .contact__wrapper img {
+    transform: scale(1);
+    margin: .3em 0 0 0;
+  }
 
-    .contact__wrapper img {
-      transform: scale(1);
-      margin: .3em 0 0 0;
-    }
+  .contact__wrapper li:nth-child(even) a {
+    border: .6em solid #DC9934;
+  }
+  
+  .contact__wrapper li:nth-child(odd) a {
+    border: .6em solid #EEB359;
+  }
+
+  .contact__rainbow div:first-child{
+    border:.2em solid rgba(121, 78, 13, .5);
+    left: 9.5%;
+    transform: translateY(-6vw)!important;
+  }
+
+  .contact__rainbow div:nth-child(2){
+    border:.2em solid rgba(121, 78, 13, .5);
+    left: 15%;
+    transform: translateY(-1vw)!important;
+  }
+
+  .contact__rainbow div:nth-child(3){
+    border:.2em solid rgba(121, 78, 13, .5);
+    left: 21%;
+    transform: translateY(4vw)!important;
+  }
+
+  .contact__rainbow div:nth-child(4){
+    border:.2em solid rgba(121, 78, 13, .5);
+    left: 27.5%;
+    transform: translateY(9vw)!important;
+  }
 }  
->>>>>>> Stashed changes
+
+@media screen and (min-width:1200px) {
+  body {
+    font-size: x-large;
+  }
+  
+  .contact__header {
+    margin-bottom: 12em;
+  }
+  
+  .contact__wrapper li a {
+    margin: -10em 0 0 -10em;
+  }
+  
+  .contact__wrapper img {
+    transform: scale(.46);
+    margin: -2.75em 0 0 -2.75em;
+  }
+  
+  .contact__wrapper li:nth-child(even) a {
+    border: .7em solid #DC9934;
+  }
+  
+  .contact__wrapper li:nth-child(odd) a {
+    border: .7em solid #EEB359;
+  }
+  
+  .contact__rainbow div:first-child{
+    border: 1.2em solid rgba(121, 78, 13, .5);
+    left: 8%;
+    transform: translateY(-35vw)!important;
+  }
+
+  .contact__rainbow div:nth-child(2){
+    border: 1.2em solid rgba(121, 78, 13, .5);
+    left: 13%;
+    transform: translateY(-30vw)!important;
+  }
+
+  .contact__rainbow div:nth-child(3){
+    border: 1.2em solid rgba(121, 78, 13, .5);
+    left: 19%;
+    transform: translateY(-25vw)!important;
+  }
+
+  .contact__rainbow div:nth-child(4){
+    left: 25%;
+    border: 1.2em solid rgba(121, 78, 13, .5);
+    transform: translateY(-20vw)!important;
+  }
+}
+
+@media screen and (min-width:1400px) {
+  .contact__wrapper li a {
+    margin-top: -12em;
+  }
+}
+
+@media screen and (min-width:1750px) {
+
+  .projects__construction {
+    font-size: xxx-large;
+  }
+
+  .contact__header {
+    margin-bottom: 10%!important;
+  }
+
+  .contact__wrapper li {
+    margin: 5% 5%;
+  }
+
+  .contact__wrapper li, a {
+    position: relative;
+    float: left;
+    line-height: 14em;
+    transform:translateX(-110%)!important;
+    width: 14em!important;
+    height: 14em!important;
+  }
+
+  .contact__wrapper img {
+    transform: scale(1.3);
+    margin: 1.75em 0 0 0;
+  }
+
+  .contact__rainbow {
+    visibility: hidden;
+  }
+}
