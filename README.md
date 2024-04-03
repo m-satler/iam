@@ -2,7 +2,6 @@
 a personal portfolio website for mei satler. available at [meisatler.com](meisatler.com)
 
 ### ToDo
-- [ ] Add a way to navigate back home from projects page
 - [ ] Fix 404 page
 - [ ] Add "experience in" section
 - [ ] Test/add accessibility features

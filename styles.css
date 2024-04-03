@@ -126,13 +126,21 @@ h4 {
 }
 
 .projects__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   color: #191751;
   background-color: #ffd9a1;
   padding: 1.5em;
   border-radius: 1em;
+  max-width: 13em;
   a {
     color: #191751;
     text-decoration: none;
+  }
+  a:hover {
+    color: #1e1e1e30;
   }
   span {
     padding: .3em;
@@ -140,8 +148,16 @@ h4 {
 }
 
 .projects__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11em;
+  height: 11em;
   img {
     max-width: 11em;
+  }
+  .square {
+    border-radius: 1em;
   }
 }
 
@@ -158,6 +174,9 @@ h4 {
   }
   a {
     color: #191751;
+  }
+  a:hover {
+    color: #1e1e1e30;
   }
 }
 
@@ -314,14 +333,17 @@ h4 {
   }
 
   .projects__shelf {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     margin-left: 2.5em;
-    margin-right: 2em;
+    margin-right: 2.5em;
   }
 
   .projects__button {
     background: linear-gradient(#ffd9a1 60%,#00000000);
     min-height: 3em;
+    min-width: 16em;
     .fa-angle-right {
       display: none;
     }
@@ -382,6 +404,28 @@ h4 {
     font-size: large;
   }
 
+  .projects__header {
+    margin-top: 20vh;
+  }
+
+  .projects__card {
+    max-width: 80%;
+
+    .links {
+      height: 2em;
+      align-content: center;
+      padding: 0em 0em;
+    }
+  }
+
+  .projects__button {
+    min-width: 80%;
+  }
+
+  .contact__header {
+    margin-bottom: 20vh;
+  }
+
   .contact__wrapper li {
     margin: 10% 10%;
   }
@@ -437,6 +481,30 @@ h4 {
     font-size: x-large;
   }
   
+  .projects__card {
+    .links {
+      height: 2em;
+      width: 50%;
+      align-self: flex-end;
+      justify-content: center;
+      a {
+        max-height: 2em;
+        max-width: 2em;
+        justify-content: center;
+        align-content: center;
+      }
+    }
+  }
+
+  .projects__button {
+    a {
+      font-size: xx-large;
+      align-content: center;
+      max-height: 2em;
+      max-width: 2em;
+    }
+  }
+
   .contact__header {
     margin-bottom: 12em;
   }

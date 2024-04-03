@@ -19,6 +19,10 @@ body {
     overflow-x: hidden;
 }
 
+h3 {
+    letter-spacing: .1em;
+}
+
 h2 {
     text-align: center;
     font-size: 3em;
@@ -54,6 +58,9 @@ section {
     img {
         max-width: 14em;
     }
+    .square {
+        border-radius: 1em;
+    }
 }
 
 .links {
@@ -64,6 +71,10 @@ section {
 a {
     color: #191751;
     text-decoration: none;
+}
+
+a:hover {
+    color: #1e1e1e30;
 }
 
 span {
