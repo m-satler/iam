@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('source/fonts/Quicksand-VariableFont.ttf');
+  
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+    color: #191751;
+    background: #fbe8cc;
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    overflow-x: hidden;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 3em;
+    row-gap: 4em;
+}
+
+.projects__card {
+    display: flex;
+    flex-direction: column;
+    background-color: #EEB359;
+    padding: 1em;
+    border-radius: 1em;
+    max-width: 16em;
+    
+}
+
+.projects__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    width: 14em;
+    height: 14em;
+    img {
+        max-width: 14em;
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: end;
+}
+
+a {
+    color: #191751;
+    text-decoration: none;
+}
+
+span {
+    padding: .3em;
+}
+
