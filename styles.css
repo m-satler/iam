@@ -134,6 +134,7 @@ h4 {
   background-color: #ffd9a1;
   padding: 1.5em;
   border-radius: 1em;
+  box-shadow: 0em .5em .5em .2em #1e1e1e30;
   max-width: 13em;
   a {
     color: #191751;
@@ -162,8 +163,9 @@ h4 {
 }
 
 .projects__button {
-  background: linear-gradient(90deg, #ffd9a1 60%,#00000000);
-  border-radius: 1em;
+  background: linear-gradient(90deg, #ffd9a1 40%,#00000000);
+  border-radius: 1em 0em 0em 1em;
+  box-shadow: 1.8em 1em 1em -.3em #EEB359, 1.8em -1em 1em -.3em #EEB359, 0em .5em .5em .2em #1e1e1e30;
   align-content: center;
   min-width: 3em;
   .fa-angle-right {
@@ -181,8 +183,12 @@ h4 {
 }
 
 @keyframes arrow_h {
-  from{margin-left: -30%;}
-  to{margin-left: 10%;}
+  from {
+    margin-left: -30%;
+  }
+  to {
+    margin-left: 10%;
+  }
 }
 
 .contact__header {
@@ -300,6 +306,11 @@ h4 {
   z-index: -97;
 }
 
+@media screen and (max-width:980px) {
+  .projects__button {
+    box-shadow: 1em 1.5em 1em -.5em #EEB359, 1em -1.5em 1em -.5em #EEB359, 0em .5em .5em .2em #1e1e1e30;
+  }
+}
 
 @media screen and (max-width:960px){ 
   body {
@@ -341,7 +352,9 @@ h4 {
   }
 
   .projects__button {
-    background: linear-gradient(#ffd9a1 60%,#00000000);
+    background: linear-gradient(#ffd9a1 40%,#00000000);
+    border-radius: 1em 1em 0em 0em;
+    box-shadow: -2em 1.5em 1em -.3em #EEB359, 2em 1.5em 1em -.3em #EEB359, 0em .5em .5em .2em #1e1e1e30;
     min-height: 3em;
     min-width: 16em;
     .fa-angle-right {
@@ -357,8 +370,12 @@ h4 {
   }
 
   @keyframes arrow_v {
-    from{margin-top: -4%;}
-    to{margin-top: 1%;}
+    from {
+      margin-top: -4%;
+    }
+    to {
+      margin-top: 1%;
+    }
   }
 
   .contact__header {
@@ -482,6 +499,7 @@ h4 {
   }
   
   .projects__card {
+    overflow-x: hidden;
     .links {
       height: 2em;
       width: 50%;
@@ -558,6 +576,10 @@ h4 {
 }
 
 @media screen and (min-width:1750px) {
+
+  .projects__card {
+    overflow: hidden;
+  }
 
   .contact__header {
     margin-bottom: 10%!important;

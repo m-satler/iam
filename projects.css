@@ -29,6 +29,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: flex-start;
     column-gap: 3em;
     row-gap: 4em;
 }
@@ -39,8 +40,46 @@ section {
     background-color: #EEB359;
     padding: 1em;
     border-radius: 1em;
+    box-shadow: 0em .5em .5em .2em #1e1e1e30;
     max-width: 16em;
-    
+}
+
+.projects__card:hover {
+    animation: 1s 1 ease hover;
+    transform: translateY(-1em);
+    box-shadow: 0em 1.5em .5em .2em #1e1e1e30;
+    flex-basis: 18em;
+    max-width: none;
+    .projects__row:has(> .square) {
+        border-radius: 50em / 10em;
+        width: 15em;
+        height: 15em;
+        overflow: hidden;
+        img {
+            animation: 1.2s 1 ease-out zoom_in;
+            transform: scale(1.7);
+        }
+    }
+}
+
+@keyframes hover {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-1em);
+        box-shadow: 0em 1.5em .5em .2em #1e1e1e30;
+        flex-basis: 18em;
+    }
+}
+
+@keyframes zoom_in {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.7);
+    }
 }
 
 .projects__row {
