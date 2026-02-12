@@ -85,9 +85,9 @@ h4 {
 }
 
 .about-card__image img {
-  margin-top: 4em;
+  margin-top: 1em;
   object-fit: contain;
-  max-width: 100%;
+  max-width: 80%;
   border: .6em solid #794e0d;
   border-radius: 2em 8em;
   /*i don't know about this border radius. might delete.*/
@@ -103,7 +103,6 @@ h4 {
 .about-card__blurb {
   text-align: center;
   font-size: larger;
-  margin: 2em;
 }
 
 .projects__header {
@@ -447,12 +446,18 @@ h4 {
     margin: 10% 10%;
   }
 
-  .contact__wrapper li, a {
+  .contact__wrapper li {
     position: relative;
     line-height: 14em;
     transform: translateX(-42%)!important;
     width: 14em!important;
     height: 14em!important;
+    a {
+      line-height: 14em;
+      transform: translateX(-42%)!important;
+      width: 14em!important;
+      height: 14em!important;
+    }
   }
 
   .contact__wrapper img {
@@ -579,6 +584,11 @@ h4 {
 
   .projects__card {
     overflow: hidden;
+    min-width: 15em;
+  }
+
+  .projects__button {
+    min-width: 8em;
   }
 
   .contact__header {
@@ -589,13 +599,19 @@ h4 {
     margin: 5% 5%;
   }
 
-  .contact__wrapper li, a {
+  .contact__wrapper li {
     position: relative;
     float: left;
-    line-height: 14em;
     transform:translateX(-110%)!important;
     width: 14em!important;
     height: 14em!important;
+    a {
+      position: relative;
+      float: left;
+      transform:translateX(-110%)!important;
+      width: 14em!important;
+      height: 14em!important;
+    }
   }
 
   .contact__wrapper img {

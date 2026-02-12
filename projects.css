@@ -35,6 +35,9 @@ section {
 }
 
 .projects__card {
+    transition: 
+        transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
     background-color: #EEB359;
@@ -45,40 +48,13 @@ section {
 }
 
 .projects__card:hover {
-    animation: 1s 1 ease hover;
     transform: translateY(-1em);
     box-shadow: 0em 1.5em .5em .2em #1e1e1e30;
-    flex-basis: 18em;
-    max-width: none;
     .projects__row:has(> .square) {
-        border-radius: 50em / 10em;
-        width: 15em;
-        height: 15em;
-        overflow: hidden;
         img {
-            animation: 1.2s 1 ease-out zoom_in;
             transform: scale(1.7);
+            max-width: 100%;
         }
-    }
-}
-
-@keyframes hover {
-    from{
-        transform: translateY(0);
-    }
-    to{
-        transform: translateY(-1em);
-        box-shadow: 0em 1.5em .5em .2em #1e1e1e30;
-        flex-basis: 18em;
-    }
-}
-
-@keyframes zoom_in {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.7);
     }
 }
 
@@ -90,11 +66,16 @@ section {
     justify-self: center;
     width: 14em;
     height: 14em;
+    border-radius: 1em;
+    overflow: hidden; 
     img {
-        max-width: 14em;
+        object-fit: cover;
+        max-width: 100%;
     }
     .square {
         border-radius: 1em;
+        transition: 
+            transform 1.2s ease;
     }
 }
 
